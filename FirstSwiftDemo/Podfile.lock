@@ -1,0 +1,54 @@
+PODS:
+  - Alamofire (4.9.1)
+  - HandyJSON (5.0.3-beta)
+  - SDWebImage (5.10.0):
+    - SDWebImage/Core (= 5.10.0)
+  - SDWebImage/Core (5.10.0)
+  - SnapKit (4.0.0)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - HandyJSON (from `https://gitee.com/teenloong/HandyJSON.git`)
+  - SDWebImage (from `https://gitee.com/mail2chensh/SDWebImage.git`)
+  - SnapKit (from `https://gitee.com/Cocoapods-Wand/SnapKit.git`)
+  - SwiftyJSON (from `https://gitee.com/mirrors/SwiftyJSON.git`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  HandyJSON:
+    :git: https://gitee.com/teenloong/HandyJSON.git
+  SDWebImage:
+    :git: https://gitee.com/mail2chensh/SDWebImage.git
+  SnapKit:
+    :git: https://gitee.com/Cocoapods-Wand/SnapKit.git
+  SwiftyJSON:
+    :git: https://gitee.com/mirrors/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  HandyJSON:
+    :commit: 379f6ac108cf45e082fbf0aa3a04e849dadd1428
+    :git: https://gitee.com/teenloong/HandyJSON.git
+  SDWebImage:
+    :commit: e857b78ca4c8afe616b794aeb090d40f4e348072
+    :git: https://gitee.com/mail2chensh/SDWebImage.git
+  SnapKit:
+    :commit: c0f66e42be339f27e727da022518af362cca409b
+    :git: https://gitee.com/Cocoapods-Wand/SnapKit.git
+  SwiftyJSON:
+    :commit: 99b3f4bb87261f9ed805ade158c4e9c451f4a8d0
+    :git: https://gitee.com/mirrors/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  HandyJSON: 88e8ea5f66ab65c3b8768499a1935d0509c460d4
+  SDWebImage: 9169792e9eec3e45bba2a0c02f74bf8bd922d1ee
+  SnapKit: 4b1c20a79bc7655f2bdefba4f008630681f63fe5
+  SwiftyJSON: 1817529ff49abe4d8a49ce8549aeb8a30ad162ee
+
+PODFILE CHECKSUM: ae91a71c85144c26e1ce71706028ebd9cdd83d0d
+
+COCOAPODS: 1.10.1

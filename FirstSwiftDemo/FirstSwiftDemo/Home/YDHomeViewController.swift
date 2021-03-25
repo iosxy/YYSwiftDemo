@@ -9,21 +9,47 @@ import UIKit
 
 class YDHomeViewController: YYBaseViewController {
 
+    var dataSouce: [String] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "首页"
-        // Do any additional setup after loading the view.
+        self.setUpDataSource()
+        self.view.addSubview(tableView)
+    }
+    private lazy var tableView : UITableView = {
+        let view = UITableView.init(frame: self.view.bounds)
+        view.tableFooterView = UIView()
+        view.dataSource = self
+        view.delegate = self
+        view.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        return view
+    }()
+
+}
+extension YDHomeViewController {
+    
+    func setUpDataSource(){
+        
+        self.dataSouce.append("左滑删除和背景滚动视图手势冲突测试")
+        tableView.reloadData()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+}
+extension YDHomeViewController: UITableViewDataSource , UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSouce.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = dataSouce[indexPath.row]
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+    }
 }
