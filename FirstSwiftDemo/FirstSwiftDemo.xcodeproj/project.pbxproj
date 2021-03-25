@@ -15,6 +15,8 @@
 		648C86542609D9EA00467652 /* YDBaseTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648C86532609D9EA00467652 /* YDBaseTabbarController.swift */; };
 		648C86582609DAC100467652 /* YDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648C86572609DAC100467652 /* YDHomeViewController.swift */; };
 		648C865B2609DAC900467652 /* YYMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648C865A2609DAC900467652 /* YYMineViewController.swift */; };
+		64A4D47D260C5B4600E70432 /* YDTableTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A4D47C260C5B4600E70432 /* YDTableTestViewController.swift */; };
+		64A4D480260C5C0C00E70432 /* YYCommenDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A4D47F260C5C0C00E70432 /* YYCommenDefine.swift */; };
 		77D76744CE9EACA0048E0018 /* Pods_FirstSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB2816AFD6E2D8DCACADEB0 /* Pods_FirstSwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		648C86532609D9EA00467652 /* YDBaseTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDBaseTabbarController.swift; sourceTree = "<group>"; };
 		648C86572609DAC100467652 /* YDHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDHomeViewController.swift; sourceTree = "<group>"; };
 		648C865A2609DAC900467652 /* YYMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYMineViewController.swift; sourceTree = "<group>"; };
+		64A4D47C260C5B4600E70432 /* YDTableTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDTableTestViewController.swift; sourceTree = "<group>"; };
+		64A4D47F260C5C0C00E70432 /* YYCommenDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYCommenDefine.swift; sourceTree = "<group>"; };
 		AEB2816AFD6E2D8DCACADEB0 /* Pods_FirstSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -126,6 +130,7 @@
 		64A4D46D260C57E800E70432 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				64A4D47F260C5C0C00E70432 /* YYCommenDefine.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 		64A4D478260C5A5600E70432 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				64A4D47C260C5B4600E70432 /* YDTableTestViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -277,7 +283,9 @@
 				648C86582609DAC100467652 /* YDHomeViewController.swift in Sources */,
 				648C86302609D96100467652 /* AppDelegate.swift in Sources */,
 				648C86512609D9E100467652 /* YDBaseNavigationController.swift in Sources */,
+				64A4D480260C5C0C00E70432 /* YYCommenDefine.swift in Sources */,
 				648C864D2609D9C200467652 /* YYBaseViewController.swift in Sources */,
+				64A4D47D260C5B4600E70432 /* YDTableTestViewController.swift in Sources */,
 				648C86542609D9EA00467652 /* YDBaseTabbarController.swift in Sources */,
 				648C865B2609DAC900467652 /* YYMineViewController.swift in Sources */,
 			);
