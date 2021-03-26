@@ -64,13 +64,13 @@ extension YDTableTestViewController: UITableViewDataSource , UITableViewDelegate
         
         return [action]
     }
-//    func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
-//            self.backScrollView.isScrollEnabled = false
-//    }
-//
-//    func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
-//           self.backScrollView.isScrollEnabled = true
-//    }
+    func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
+            self.backScrollView.isScrollEnabled = false
+    }
+
+    func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
+           self.backScrollView.isScrollEnabled = true
+    }
 //    @available(iOS 11.0, *)
 //       func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
 //           if indexPath.section == 0  {
@@ -100,7 +100,7 @@ class YYMuteScrollView: UIScrollView , UIGestureRecognizerDelegate {
         if (view?.superview?.isMember(of: UITableViewCell.self)) ?? false{
             self.isScrollEnabled = false
         }else {
-            self.isScrollEnabled = true
+           // self.isScrollEnabled = true
         }
         return view
     }
