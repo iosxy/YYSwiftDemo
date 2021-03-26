@@ -31,6 +31,7 @@ extension YDHomeViewController {
     func setUpDataSource(){
         
         self.dataSouce.append("左滑删除和背景滚动视图手势冲突测试")
+        self.dataSouce.append("网络请求测试")
         tableView.reloadData()
     }
     
@@ -52,6 +53,9 @@ extension YDHomeViewController: UITableViewDataSource , UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         if indexPath.row == 0 {
             let vc = YDTableTestViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 1 {
+            let vc = YYTestNetWorkViewController()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

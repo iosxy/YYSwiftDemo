@@ -17,6 +17,8 @@
 		648C865B2609DAC900467652 /* YYMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648C865A2609DAC900467652 /* YYMineViewController.swift */; };
 		64A4D47D260C5B4600E70432 /* YDTableTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A4D47C260C5B4600E70432 /* YDTableTestViewController.swift */; };
 		64A4D480260C5C0C00E70432 /* YYCommenDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A4D47F260C5C0C00E70432 /* YYCommenDefine.swift */; };
+		64A4D486260DC40000E70432 /* YYNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A4D485260DC40000E70432 /* YYNetworkManager.swift */; };
+		64A4D48A260DC71700E70432 /* YYTestNetWorkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A4D489260DC71700E70432 /* YYTestNetWorkViewController.swift */; };
 		77D76744CE9EACA0048E0018 /* Pods_FirstSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB2816AFD6E2D8DCACADEB0 /* Pods_FirstSwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		648C865A2609DAC900467652 /* YYMineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYMineViewController.swift; sourceTree = "<group>"; };
 		64A4D47C260C5B4600E70432 /* YDTableTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YDTableTestViewController.swift; sourceTree = "<group>"; };
 		64A4D47F260C5C0C00E70432 /* YYCommenDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYCommenDefine.swift; sourceTree = "<group>"; };
+		64A4D485260DC40000E70432 /* YYNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYNetworkManager.swift; sourceTree = "<group>"; };
+		64A4D489260DC71700E70432 /* YYTestNetWorkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTestNetWorkViewController.swift; sourceTree = "<group>"; };
 		AEB2816AFD6E2D8DCACADEB0 /* Pods_FirstSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirstSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,7 @@
 		648C862E2609D96100467652 /* FirstSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				64A4D484260DC3C600E70432 /* Network */,
 				64A4D477260C5A4D00E70432 /* Test */,
 				64A4D46D260C57E800E70432 /* Tools */,
 				648C863D2609D96200467652 /* Info.plist */,
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				64A4D47C260C5B4600E70432 /* YDTableTestViewController.swift */,
+				64A4D489260DC71700E70432 /* YYTestNetWorkViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -157,6 +163,14 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		64A4D484260DC3C600E70432 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				64A4D485260DC40000E70432 /* YYNetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		AAC42862B7D5FAE5BCB1EDA2 /* Frameworks */ = {
@@ -282,8 +296,10 @@
 			files = (
 				648C86582609DAC100467652 /* YDHomeViewController.swift in Sources */,
 				648C86302609D96100467652 /* AppDelegate.swift in Sources */,
+				64A4D486260DC40000E70432 /* YYNetworkManager.swift in Sources */,
 				648C86512609D9E100467652 /* YDBaseNavigationController.swift in Sources */,
 				64A4D480260C5C0C00E70432 /* YYCommenDefine.swift in Sources */,
+				64A4D48A260DC71700E70432 /* YYTestNetWorkViewController.swift in Sources */,
 				648C864D2609D9C200467652 /* YYBaseViewController.swift in Sources */,
 				64A4D47D260C5B4600E70432 /* YDTableTestViewController.swift in Sources */,
 				648C86542609D9EA00467652 /* YDBaseTabbarController.swift in Sources */,
